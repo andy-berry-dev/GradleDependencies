@@ -2,6 +2,18 @@
 apply plugin: "eclipse"
 apply plugin: "groovy"
 
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	groovy localGroovy()
+	
+	compile gradleApi()
+	
+	testCompile 'junit:junit:4.10'
+}
+
 task wrapper(type: Wrapper) {
 	gradleVersion = '1.1'
 }
