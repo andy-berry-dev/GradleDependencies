@@ -6,8 +6,6 @@ import org.gradle.testfixtures.ProjectBuilder
 import org.junit.*
 import static org.junit.Assert.*
 
-import com.sun.xml.internal.ws.policy.spi.AssertionCreationException;
-
 class DependenciesTest {
 
 	private Project project
